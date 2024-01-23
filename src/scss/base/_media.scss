@@ -1,0 +1,193 @@
+/* ======= <1024px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 1024px) {
+
+
+    .container {
+        padding: 0 30px;
+    }
+}
+
+/* ======= <768px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 768px) {
+
+
+    .header {
+        &__logo {
+            width: 175px;
+        }
+        &__official {
+            font-size: 12px;
+            span {
+                font-size: 14px;
+                margin-top: 0px;
+            }
+        }
+        &__phone {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .button_header {
+            width: 105px;
+            height: 30px;
+            font-size: 10px;
+        }
+    }
+    
+
+    .promo {
+        min-height: 0px;
+        padding: 21px 0 50px;
+        background-position: left;
+    
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__header {
+            font-size: 36px;
+            line-height: 38px;
+        }
+        &__subheader {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        &__icons {
+            width: 300px;
+        }
+        &__icon {
+            font-size: 14px;    
+        }
+        .button_main {
+            margin-top: 30px;
+            width: 200px;
+            font-size: 12px;
+        }
+    }
+
+
+    .advantages {
+        padding: 70px 0 50px;
+        &__header {
+        font-size: 28px;
+        }
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__title {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        &__text {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 16px;
+            a {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+/* ======= <576px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 576px) {
+
+
+    .container {
+        padding: 0 8px;
+    }
+
+
+    .header {
+
+        &__logo {
+            width: 150px;
+        }
+        &__official {
+            font-size: 10px;
+            font-weight: 500;
+            span {
+                font-size: 10px;
+                margin-top: 4px;
+            }
+        }
+        &__phone {
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 2px;
+        }
+        .button_header {
+            width: 100px;
+            height: 25px;
+            font-size: 8px;
+        }
+    }
+
+
+    .promo {
+        padding: 15px 0 50px;
+        background-position: -80px;
+
+        &__wrapper {
+            margin-top: 90px;
+        }
+        &__header {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &__subheader {
+            text-align: right;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        &__icons {
+            margin-top: 40px;
+            width: 75vw;
+        }
+        &__icon {
+            width: 30%;
+            font-size: 12px;
+            line-height: 14px;
+            img {
+                margin-bottom: 10px;
+            }    
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+
+
+    .advantages {
+        padding: 30px 0 30px;
+        &__header {
+        font-size: 26px;
+        }
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__item {
+            width: 275px;
+            &:nth-child(2) {
+                margin: 0 10px;
+            }
+        }
+        &__title {
+            margin-top: 30px;
+        }
+        &__text {
+            margin-top: 10px;
+            font-size: 13px;
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+}
