@@ -1,16 +1,45 @@
 @import 'base/fonts';
 @import 'base/mixins';
 @import 'base/variables';
-@import 'blocks/promo';
-@import 'blocks/header';
-@import 'blocks/buttons';
-@import 'blocks/advantages';
-@import 'base/media';
+
 
 body {font-family: "Museo Sans";}
 h1,h2,h3,h4,h5,h6 {margin: 0;}
+input {border:none;}
 
 .container {
     max-width: 950px;
     margin: 0 auto;
 }
+/* ======= <1024px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+/* ======= <768px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 768px) {
+}
+
+/* ======= <576px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 8px;
+    }
+}
+
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons'; // кнопки
+@import 'blocks/advantages';
+@import 'blocks/titles'; // заголовки
+@import 'blocks/consultation';
+@import 'blocks/forms';  // формы

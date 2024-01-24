@@ -1,28 +1,23 @@
-.button {
-    border-radius: 5px;
-    background: $main-color;
-    border: none;
-    color: $third-color;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-
-    &_header {
-        width: 150px;
-        height: 30px;
-        font-size: 12px;
-    }
-
-    &_main {
-        margin-top: 68px;
-        width: 300px;
+.feed-form {
+    max-width: 300px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    input {
+        margin-bottom: 15px;
         height: 50px;
-        font-size: 16px;
+        border-radius: 5px;
+        background: $third-color;
+        padding: 0 20px;
+        color: #4B4B4B;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 66px;
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
     }
 
-    &_submit {
-        height: 55px;
-    }
 }
 
 
@@ -31,10 +26,6 @@
 
 @media (max-width: 1024px) {
 
-
-    .container {
-        padding: 0 30px;
-    }
 }
 
 /* ======= <768px ========================================================================================== */
@@ -42,19 +33,6 @@
 
 @media (max-width: 768px) {
 
-
-    .button_header {
-        width: 105px;
-        height: 30px;
-        font-size: 10px;
-    }
-    
-
-    .button_main {
-        margin-top: 30px;
-        width: 200px;
-        font-size: 12px;
-    }
 }
 
 /* ======= <576px ========================================================================================== */
@@ -63,9 +41,8 @@
 @media (max-width: 576px) {
 
 
-    .button_header {
-        width: 100px;
-        height: 25px;
-        font-size: 8px;
+    .feed-form {
+        max-width: 90%;
+        margin: 36px auto 0;
     }
 }
