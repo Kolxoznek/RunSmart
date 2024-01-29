@@ -1,0 +1,106 @@
+.carousel {
+    padding: 108px 0;
+    &__wrapper {
+        width: 750px;
+        margin: 0 auto;
+        position: relative;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            margin: auto;
+            width: 100%; 
+        }
+    }
+    &__item {
+        margin: auto 0;
+    }
+    .carousel__prev, .carousel__next {
+        border: none;
+        background: $third-color;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .carousel__prev {
+        left: -10%;
+    }
+    .carousel__next {
+        right: -10%;
+        &:active {
+            opacity: .5;
+            transition: all .5s;
+        }
+    }
+    .tns-nav {
+        position: absolute;
+        left: 50%;
+        bottom: -10%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 10px;
+        button {
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border: none;
+            border-radius: 50%;
+            background: rgb(199, 1, 1, .5);
+        }
+        .tns-nav-active {
+            background: $main-color;
+            transition: all .5s;
+        }
+    }
+}
+
+
+/* ======= <1024px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 1024px) {
+    
+    
+    .carousel {
+        &__wrapper {
+            width: 75vw;
+        }
+    }
+}
+
+/* ======= <768px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 768px) {
+
+    .carousel {
+        .container {
+            padding: 0px;
+        }
+        &__wrapper {
+            width: 100vw;
+        }
+        &__inner {
+            width: 100%;
+        }
+        .carousel__prev, .carousel__next {
+            display: none;
+        }
+    }
+}
+
+/* ======= <576px ========================================================================================== */
+/* ========================================================================================================= */
+
+@media (max-width: 576px) {
+    .carousel {
+        padding: 50px 0 70px;
+    }
+    
+}
